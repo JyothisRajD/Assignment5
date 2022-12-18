@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebApplication.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <asp:HyperLink class="nav-link" ID="HyperLink4" runat="server" NavigateUrl="~/Admin/Admin_home.aspx">Home</asp:HyperLink>
+      </li>
+      <li class="nav-item">
+        <asp:HyperLink class="nav-link" ID="HyperLink5" runat="server" NavigateUrl="~/Admin/Admin_confirm.aspx">Confirm</asp:HyperLink>
+       </li>
+          <li class="nav-item">
+        <asp:HyperLink class="nav-link" ID="HyperLink6" runat="server" NavigateUrl="~/Guest/logout_page.aspx">Log Out</asp:HyperLink>
+        </li>
+        </ul>
+         </div>
+        </nav>
+        <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
